@@ -11,7 +11,11 @@ import javafx.scene.text.*;
 
 public class WizardOfYesNo extends Application {
 
-	private static final String ANSWER = "No";
+	private static final String [] ANSWER = {
+			"Yes",
+			"No"
+	};
+	
 		
 //			"Yes" , 
 //			"Go for it!",
@@ -30,15 +34,15 @@ public class WizardOfYesNo extends Application {
 	@Override
 	public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
-     Label label = new Label ();
-     label.setText(ANSWER);
-//		Random rand = new Random();
-//		int numberOfAnswer = ANSWER.length;
-//		int pick = rand.nextInt(numberOfAnswer);
-//		String answer = ANSWER [pick];
-//		
-//		Label label = new Label();
-//		label.setText(answer);
+//     Label label = new Label ();
+//     label.setText(ANSWER);
+		Random rand = new Random();
+		int numberOfAnswer = ANSWER.length;
+		int pick = rand.nextInt(numberOfAnswer);
+		String answer = ANSWER [pick];
+		
+		Label label = new Label();
+		label.setText(answer);
 //		
 //		Font font = Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 32);
 //		label.setFont(font);
