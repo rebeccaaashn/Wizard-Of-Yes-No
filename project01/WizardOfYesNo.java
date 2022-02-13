@@ -29,7 +29,7 @@ public class WizardOfYesNo extends Application {
 	@Override
 	public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
-//     Label label = new Label ();
+     Label label = new Label ("Hello World");
 //     label.setText(ANSWER);
 //		Random rand = new Random();
 //		int numberOfAnswer = ANSWER.length;
@@ -42,8 +42,8 @@ public class WizardOfYesNo extends Application {
 //		Font font = Font.font("Times New Roman", FontWeight.BOLD, FontPosture.ITALIC, 32);
 //		label.setFont(font);
 //     
-//     Scene root = new Scene (label);
-//     arg0.setScene(root);
+     Scene root = new Scene (label, 200, 100);
+     arg0.setScene(root);
 //     arg0.sizeToScene();
 //     arg0.setResizable(false);
 //     arg0.setTitle("Wizard of Yes/No");
