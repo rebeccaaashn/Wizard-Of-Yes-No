@@ -11,7 +11,8 @@ import javafx.scene.text.*;
 
 public class WizardOfYesNo extends Application {
 
-//	private static final String [] ANSWER = {
+	private static final String ANSWER = "No";
+		
 //			"Yes" , 
 //			"Go for it!",
 //			"Yes, definitely.",
@@ -29,8 +30,8 @@ public class WizardOfYesNo extends Application {
 	@Override
 	public void start(Stage arg0) throws Exception {
 		// TODO Auto-generated method stub
-     Label label = new Label ("Hello World");
-//     label.setText(ANSWER);
+     Label label = new Label ();
+     label.setText(ANSWER);
 //		Random rand = new Random();
 //		int numberOfAnswer = ANSWER.length;
 //		int pick = rand.nextInt(numberOfAnswer);
